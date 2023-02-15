@@ -1,6 +1,6 @@
 ---
 title: 如何优雅地通过远程设备写代码
-last_modified_at: 2023-02-14
+date: 2023-02-15
 categories:
   - Blog
 tags:
@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-最近一两年因为疫情的影响，Work from Home 成为了大家的新常态。然而，工作代码和数据通常都存在公司/学校的机器上，这就导致了一个问题：如何在家里访问公司/学校的机器呢？最简单粗暴的方法自然是用 TeamViewer, AnyDesk, 向日葵这类软件来控制机器，并直接在远程桌面上进行开发。但是，一方面出于安全考虑，不少机构（例如我们实验室）会禁止使用这些软件；另一方面，直接用这些软件来进行远程开发的体验也不是很好，往往伴随着卡顿、延迟等问题。因此，我们需要一种更优雅的丰富的插件和功能极大地增加了它的可扩展性。
+最近一两年因为疫情的影响，Work from Home 成为了大家的新常态。然而，工作代码和数据通常都存在公司/学校的机器上，这就导致了一个问题：如何在家里访问公司/学校的机器呢？最简单粗暴的方法自然是用 TeamViewer, AnyDesk, 向日葵这类软件来控制机器，并直接在远程桌面上进行开发。但是，一方面出于安全考虑，不少机构（例如我们实验室）会禁止使用这些软件；另一方面，直接用这些软件来进行远程开发的体验也不是很好，往往伴随着卡顿、延迟等问题。因此，我们需要一种更优雅的方案来解决远程开发的需求，那就是 VS Code + SSH + 内网穿透。
 
 ## 什么是内网穿透？
 
@@ -115,19 +115,18 @@ toc_sticky: true
         <img src="https://user-images.githubusercontent.com/45810070/218765772-a08408cc-d5b9-4cf5-95f2-7b9ef06bbc0a.png" alt="Remote-Dev-Extension" style="margin-bottom: 20px; border: 1px solid black;">
   </div>
 
-  然后，我们在打开的 SSH Config 文件中，添加以下内容：
+  然后，我们在打开的 [SSH Config](https://linux.die.net/man/5/ssh_config) 文件中，添加以下内容：
 
   ```shell
-  # Read more about SSH config files: https://linux.die.net/man/5/ssh_config
   Host Work # 远程机器的别名
     HostName 192.168.194.174 # 分配的内网 IP 地址
-    Port 2222
+    Port 2222 # 远程机器的 SSH 端口号
     User xinyu # 远程机器的用户名
   ```
 
-  其中 HostName 是我们在内网穿透中给远程服务器分配的内网 IP 地址，Port 是远程服务器的 SSH 端口号（通常为 2222），User 是远程服务器的用户名。配置完成后，我们可以在 Remote Explorer 插件中看到我们刚刚添加的服务器了！双击即可连接到远程服务器，然后我们就可以像在本地一样流畅地使用远程机器进行开发了。
+  其中 HostName 是我们在内网穿透中给远程服务器分配的内网 IP 地址，Port 是远程服务器的 SSH 端口号（使用 Zotier 进行内网穿透时，默认服务器的 SSH 端口号为 2222），User 是远程服务器的用户名。配置完成后，我们可以在 Remote Explorer 插件中看到我们刚刚添加的服务器了！双击即可连接到远程服务器，然后我们就可以像在本地一样流畅地使用远程机器进行开发了。
 
-**Tips 💡:** 另外，为了方便起见，我们可以配置 SSH 的免密登录，这样就不需要每次连接远程服务器时都输入密码了。
+💡 另外，为了方便起见，我们可以配置 SSH 的免密登录，这样就不需要每次连接远程服务器时都输入密码了。
 {: .notice--info}
 
 ```bash
@@ -142,5 +141,3 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub xinyu@192.168.194.174
 <div style="text-align:center;">
         <img src="https://user-images.githubusercontent.com/45810070/218771838-a4c81287-7a0c-466c-b26c-60aa620eb2b1.png" alt="Example-Remote-Dev" style="margin-bottom: 20px; border: 1px solid black;">
 </div>
-
-这篇博客就是我在家使用 VS Code 连接到实验室机器进行写作的，希望能够帮助到有同样开发需求的同学们！
