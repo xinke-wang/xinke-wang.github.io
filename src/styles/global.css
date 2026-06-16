@@ -412,6 +412,19 @@ body {
 }
 .ach-item .star { font-size: 0.6rem; opacity: 0.6; flex-shrink: 0; }
 
+.capacity-note {
+  display: flex; flex-direction: column; gap: 6px;
+  margin-bottom: 26px; padding-left: 16px;
+  border-left: 2px solid #E0A92E;
+}
+[data-theme="dark"] .capacity-note { border-left-color: #B7791F; }
+.capacity-status {
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.13em;
+  text-transform: uppercase; color: #B45309;
+}
+[data-theme="dark"] .capacity-status { color: #F0B544; }
+.capacity-text { font-size: 0.88rem; line-height: 1.75; color: var(--fg-2); }
+
 .prospective-intro {
   font-size: 0.9rem; line-height: 1.85; color: var(--fg-2);
   margin-bottom: 28px;
@@ -436,7 +449,7 @@ body {
 
 .adelaide-card {
   border: 1px solid var(--border); border-radius: 8px;
-  padding: 24px 28px; margin-bottom: 36px;
+  padding: 24px 28px; margin-bottom: 4px;
   background: var(--bg-surface);
 }
 .adelaide-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }

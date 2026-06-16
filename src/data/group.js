@@ -75,6 +75,11 @@ export const ALUMNI = [
 ];
 
 export const PROSPECTIVE = {
+  // Set to null to remove the status note at the top of the section.
+  atCapacityNotice:
+    'My supervision quota is currently full, so I am not recruiting new research ' +
+    'students at the moment. This does not affect Adelaide University students ' +
+    'wishing to undertake a research project with me.',
   intro:
     'I am actively looking for motivated PhD and MPhil students to join my group. ' +
     'If you are interested in working on problems in multimodal machine learning and ' +

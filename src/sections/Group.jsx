@@ -91,6 +91,12 @@ export function GroupSection() {
       </div>
 
       <SectionTitle>Prospective Students</SectionTitle>
+      {PROSPECTIVE.atCapacityNotice && (
+        <div className="capacity-note">
+          <span className="capacity-status">Currently at capacity</span>
+          <span className="capacity-text">{PROSPECTIVE.atCapacityNotice}</span>
+        </div>
+      )}
       <div className="prospective-intro">{PROSPECTIVE.intro}</div>
 
       <div style={{ marginBottom: 36 }}>
