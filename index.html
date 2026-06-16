@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xinyu Wang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the stored theme before first paint to avoid a light-mode flash.
+      if (localStorage.getItem('ac-dark') === 'true') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      // Run the entry animation only when the page is visible. Keeps
+      // screenshots, print, and hidden tabs from rendering blank.
+      if (!document.hidden) {
+        document.documentElement.classList.add('animate');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
