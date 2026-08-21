@@ -5,7 +5,7 @@ import { AboutSection } from './sections/About.jsx';
 import { PublicationsSection } from './sections/Publications.jsx';
 import { GroupSection } from './sections/Group.jsx';
 
-const SECTIONS = ['about', 'publications', 'group'];
+const SECTIONS = ['about', 'publications'];
 
 export default function App() {
   const [section, setSection] = useState(() => {
