@@ -49,6 +49,15 @@ export const PUBLICATIONS = [
     links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2604.20043' }],
     github: { repo: 'Einsam1819/TriEx' },
   },
+  {
+    year: 2026,
+    title: 'MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm',
+    authors: ['Zhang Li', 'Yuliang Liu', 'Qiang Liu', 'Zhiyin Ma', 'Ziyang Zhang', 'Shuo Zhang', 'Biao Yang', 'Zidun Guo', 'Jiarui Zhang', 'Xinyu Wang', 'Xiang Bai'],
+    selfIdx: 9, corrIdx: null,
+    venue: 'SCIENCE CHINA Information Sciences', badge: null,
+    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2506.05218' }],
+    github: { repo: 'Yuliang-Liu/MonkeyOCR' },
+  },
 
   // ── 2025 ────────────────────────────────────────────────
   {
@@ -77,15 +86,6 @@ export const PUBLICATIONS = [
     venue: 'NeurIPS 2025', badge: null,
     links: [{ l: 'Paper', h: 'https://proceedings.neurips.cc/paper_files/paper/2025/hash/8c2e6bb15be1894b8fb4e0f9bcad1739-Abstract-Datasets_and_Benchmarks_Track.html' }, { l: 'arXiv', h: 'https://arxiv.org/abs/2501.00321' }],
     github: { repo: 'Yuliang-Liu/MultimodalOCR' },
-  },
-  {
-    year: 2025,
-    title: 'MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm',
-    authors: ['Zhang Li', 'Yuliang Liu', 'Qiang Liu', 'Zhiyin Ma', 'Ziyang Zhang', 'Shuo Zhang', 'Biao Yang', 'Zidun Guo', 'Jiarui Zhang', 'Xinyu Wang', 'Xiang Bai'],
-    selfIdx: 9, corrIdx: null,
-    venue: 'SCIS', badge: null,
-    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2506.05218' }],
-    github: { repo: 'Yuliang-Liu/MonkeyOCR' },
   },
   {
     year: 2025,
