@@ -15,7 +15,7 @@ export const FUNDINGS = [
     title: 'Reliable, Low-Carbon AI Workflows for Sustainable Energy Transitions',
     period: '2026.08 – 2027.02',
     amount: 'A$10,000',
-    role: 'Chief Investigator',
+    role: 'Sole Investigator',
   },
   {
     agency: 'Australian Research Council Discovery Project',
@@ -29,14 +29,14 @@ export const FUNDINGS = [
     title: 'Reliable Geographic Reasoning of Language Models under Limited Supervision',
     period: '2025.06 – 2025.12',
     amount: 'A$5,000',
-    role: 'Chief Investigator',
+    role: 'Sole Investigator',
   },
   {
     agency: 'University of Adelaide',
     title: 'Trustworthy Reasoning and Evaluation under Low-Resource Scenarios',
     period: '2025.01 – 2027.12',
     amount: 'A$30,000',
-    role: 'Chief Investigator',
+    role: 'Sole Investigator',
   },
 ];
 
