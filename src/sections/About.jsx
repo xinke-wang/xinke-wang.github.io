@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { SectionTitle } from '../components/SectionTitle.jsx';
 import { TextLink } from '../components/TextLink.jsx';
 import { NEWS, FUNDINGS, TEACHING } from '../data/about.js';
+
+const NEWS_LIMIT = 5;
 
 // Render a news line, optionally linking the whole line (href) or just a
 // phrase within it (linkText).
@@ -18,6 +21,10 @@ function NewsText({ text, href, linkText }) {
 }
 
 export function AboutSection() {
+  const [newsExpanded, setNewsExpanded] = useState(false);
+  const hiddenNewsCount = Math.max(NEWS.length - NEWS_LIMIT, 0);
+  const visibleNews = newsExpanded ? NEWS : NEWS.slice(0, NEWS_LIMIT);
+
   return (
     <div>
       <SectionTitle className="fade-up d1">About Me</SectionTitle>
@@ -46,7 +53,7 @@ export function AboutSection() {
       {/* News */}
       <div className="fade-up d3" style={{ marginTop: 44 }}>
         <SectionTitle>News</SectionTitle>
-        {NEWS.map((item) => (
+        {visibleNews.map((item) => (
           <div key={item.date} className="news-row">
             <span className="news-date">{item.date}</span>
             <span className="news-text">
@@ -54,6 +61,15 @@ export function AboutSection() {
             </span>
           </div>
         ))}
+        {hiddenNewsCount > 0 && (
+          <button
+            className="pub-more-btn"
+            aria-expanded={newsExpanded}
+            onClick={() => setNewsExpanded((expanded) => !expanded)}
+          >
+            {newsExpanded ? '− Show less' : `+ Show ${hiddenNewsCount} more`}
+          </button>
+        )}
       </div>
 
       {/* Fundings */}
