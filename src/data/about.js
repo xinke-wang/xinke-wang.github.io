@@ -1,6 +1,7 @@
 // ✏️ EDIT ME — news, fundings, and teaching shown on the About page.
 
 export const NEWS = [
+  { date: 'Aug 2026', text: 'One paper accepted to Findings of EMNLP 2026.' },
   { date: 'Jun 2026', text: 'One paper accepted to The Innovation.', href: 'https://www.cell.com/the-innovation/home', linkText: 'The Innovation' },
   { date: 'Apr 2026', text: 'One paper accepted to ACL 2026.' },
   { date: 'Mar 2026', text: 'Received the ACM SIGSOFT Distinguished Paper Award at ICSE 2026.', href: 'https://conf.researchr.org/details/icse-2026/icse-2026-research-track/178/ProxyWar-Dynamic-Assessment-of-LLM-Code-Generation-in-Game-Arenas', linkText: 'ACM SIGSOFT Distinguished Paper Award' },
@@ -9,6 +10,13 @@ export const NEWS = [
 ];
 
 export const FUNDINGS = [
+  {
+    agency: 'Adelaide University',
+    title: 'Reliable, Low-Carbon AI Workflows for Sustainable Energy Transitions',
+    period: '2026.08 – 2027.02',
+    amount: 'A$10,000',
+    role: 'Chief Investigator',
+  },
   {
     agency: 'Australian Research Council Discovery Project',
     title: 'Enhancing Vision-Language Models with Game-Based Reasoning and Evaluation',

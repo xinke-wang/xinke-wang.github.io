@@ -83,7 +83,7 @@ export const PUBLICATIONS = [
     title: 'MonkeyOCR: Document Parsing with a Structure-Recognition-Relation Triplet Paradigm',
     authors: ['Zhang Li', 'Yuliang Liu', 'Qiang Liu', 'Zhiyin Ma', 'Ziyang Zhang', 'Shuo Zhang', 'Biao Yang', 'Zidun Guo', 'Jiarui Zhang', 'Xinyu Wang', 'Xiang Bai'],
     selfIdx: 9, corrIdx: null,
-    venue: 'arXiv', badge: null,
+    venue: 'SCIS', badge: null,
     links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2506.05218' }],
     github: { repo: 'Yuliang-Liu/MonkeyOCR' },
   },
