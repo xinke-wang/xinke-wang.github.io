@@ -12,6 +12,13 @@ export const NEWS = [
 export const FUNDINGS = [
   {
     agency: 'Adelaide University',
+    title: 'AI Architecture Sandbox: Browser-Based Interactive Learning for Compute-Constrained Students',
+    period: '2026.09 – 2027.03',
+    amount: 'A$5,000',
+    role: 'Sole Investigator',
+  },
+  {
+    agency: 'Adelaide University',
     title: 'Reliable, Low-Carbon AI Workflows for Sustainable Energy Transitions',
     period: '2026.08 – 2027.02',
     amount: 'A$10,000',

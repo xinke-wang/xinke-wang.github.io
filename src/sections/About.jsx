@@ -1,30 +1,10 @@
-import { useState } from 'react';
+import { FUNDINGS, TEACHING } from '../data/about.js';
 import { SectionTitle } from '../components/SectionTitle.jsx';
 import { TextLink } from '../components/TextLink.jsx';
-import { NEWS, FUNDINGS, TEACHING } from '../data/about.js';
 
-const NEWS_LIMIT = 5;
-
-// Render a news line, optionally linking the whole line (href) or just a
-// phrase within it (linkText).
-function NewsText({ text, href, linkText }) {
-  if (!href) return text;
-  const i = linkText ? text.indexOf(linkText) : -1;
-  if (i === -1) return <TextLink href={href}>{text}</TextLink>;
-  return (
-    <>
-      {text.slice(0, i)}
-      <TextLink href={href}>{linkText}</TextLink>
-      {text.slice(i + linkText.length)}
-    </>
-  );
-}
+// News section temporarily disabled — see commented block below.
 
 export function AboutSection() {
-  const [newsExpanded, setNewsExpanded] = useState(false);
-  const hiddenNewsCount = Math.max(NEWS.length - NEWS_LIMIT, 0);
-  const visibleNews = newsExpanded ? NEWS : NEWS.slice(0, NEWS_LIMIT);
-
   return (
     <div>
       <SectionTitle className="fade-up d1">About Me</SectionTitle>
@@ -50,8 +30,8 @@ export function AboutSection() {
         across document analysis, paleography, game theory, and computational social science.
       </p>
 
-      {/* News */}
-      <div className="fade-up d3" style={{ marginTop: 44 }}>
+      {/* News (temporarily disabled) */}
+      {/* <div className="fade-up d3" style={{ marginTop: 44 }}>
         <SectionTitle>News</SectionTitle>
         {visibleNews.map((item) => (
           <div key={item.date} className="news-row">
@@ -70,7 +50,7 @@ export function AboutSection() {
             {newsExpanded ? '− Show less' : `+ Show ${hiddenNewsCount} more`}
           </button>
         )}
-      </div>
+      </div> */}
 
       {/* Fundings */}
       <div className="fade-up d4" style={{ marginTop: 44 }}>
