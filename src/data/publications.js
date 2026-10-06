@@ -55,7 +55,7 @@ export const PUBLICATIONS = [
     authors: ['Ziyi Wang', 'Chen Zhang', 'Wenjun Peng', 'Qi Wu', 'Xinyu Wang'],
     selfIdx: 4, corrIdx: 4,
     venue: 'ACL 2026', badge: null,
-    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2604.20043' }],
+    links: [{ l: 'Paper', h: 'https://aclanthology.org/2026.acl-long.292/' }, { l: 'arXiv', h: 'https://arxiv.org/abs/2604.20043' }],
     github: { repo: 'Einsam1819/TriEx' },
   },
   {
