@@ -23,6 +23,15 @@ export const PUBLICATIONS = [
   // ── 2026 ────────────────────────────────────────────────
   {
     year: 2026,
+    title: 'OptiArena: Can LLMs Improve Executable Algorithms under Fixed Resource Budgets?',
+    authors: ['Wenjun Peng', 'Xinyu Wang'],
+    selfIdx: 1, corrIdx: 1,
+    venue: 'EMNLP 2026 Findings', badge: null,
+    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2609.32227' }],
+    github: { repo: 'WJ-Peng/OptiArena' },
+  },
+  {
+    year: 2026,
     title: 'AlphaOracle: Oracle Bone Script Decipherment via Human-Workflow-Inspired Deep Learning',
     authors: ['Yuliang Liu', 'Haisu Guan', 'Pengjie Wang', 'Xinyu Wang', 'Jinpeng Wan', 'Kaile Zhang', 'Handong Zheng', 'Xingchen Liu', 'Zhebin Kuang', 'Huanxin Yang', 'Bang Li', 'Yongge Liu', 'Lianwen Jin', 'Xiang Bai'],
     selfIdx: 3, corrIdx: null,
