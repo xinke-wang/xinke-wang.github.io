@@ -64,7 +64,7 @@ export const PUBLICATIONS = [
     authors: ['Zhang Li', 'Yuliang Liu', 'Qiang Liu', 'Zhiyin Ma', 'Ziyang Zhang', 'Shuo Zhang', 'Biao Yang', 'Zidun Guo', 'Jiarui Zhang', 'Xinyu Wang', 'Xiang Bai'],
     selfIdx: 9, corrIdx: null,
     venue: 'SCIENCE CHINA Information Sciences', badge: null,
-    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2506.05218' }],
+    links: [{ l: 'Paper', h: 'https://link.springer.com/article/10.1007/s11432-026-5121-6' }, { l: 'arXiv', h: 'https://arxiv.org/abs/2506.05218' }],
     github: { repo: 'Yuliang-Liu/MonkeyOCR' },
   },
 
