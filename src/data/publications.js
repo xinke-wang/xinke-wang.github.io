@@ -27,7 +27,7 @@ export const PUBLICATIONS = [
     authors: ['Wenjun Peng', 'Xinyu Wang'],
     selfIdx: 1, corrIdx: 1,
     venue: 'EMNLP 2026 Findings', badge: null,
-    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2609.32227' }],
+    links: [{ l: 'Paper', h: 'https://aclanthology.org/2026.findings-emnlp.692/' }, { l: 'arXiv', h: 'https://arxiv.org/abs/2609.32227' }],
     github: { repo: 'WJ-Peng/OptiArena' },
   },
   {
@@ -46,7 +46,7 @@ export const PUBLICATIONS = [
     authors: ['Wenjun Peng', 'Xinyu Wang', 'Qi Wu'],
     selfIdx: 1, corrIdx: 1,
     venue: 'ICSE 2026', badge: 'Distinguished Paper',
-    links: [{ l: 'arXiv', h: 'https://arxiv.org/abs/2602.04296' }],
+    links: [{ l: 'Paper', h: 'https://dl.acm.org/doi/10.1145/3744916.3773220' }, { l: 'arXiv', h: 'https://arxiv.org/abs/2602.04296' }],
     github: { repo: 'xinke-wang/ProxyWar' },
   },
   {
